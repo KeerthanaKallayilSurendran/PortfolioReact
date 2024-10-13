@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav {
+  font-family: "Updock", cursive;
+  font-size: 22px;
+}
+
+.dropdownnav {
+  position: absolute;
+  top: 1.9rem;
+  left: 10rem;
+  width: 120px;
+  padding: 10px;
+  background-color: white;
+  font-family: "Updock", cursive;
+  border-radius: 15px;
+  border: 1px solid black;
+  font-size: 22px;
+}
+
+.dropdownsocial {
+  position: absolute;
+  top: 1.9rem;
+  left: 13rem;
+  width: 140px;
+  padding: 10px;
+  background-color: white;
+  font-family: "Updock", cursive;
+  border-radius: 15px;
+  border: 1px solid black;
+  font-size: 22px;
+}
+
+.landing {
+  height: 100vh;
+  background-image: url('./assets/bg1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing span {
+  font-family: "Updock", cursive;
+  font-weight: 400;
+}
+
+.experience h1 {
+  font-family: "Concert One", serif;
+}
+
+.experience ul,
+.experience h2 {
+  font-family: "Inconsolata", serif;
+}
+
+.experience ul li {
+  font-size: 18px;
+  line-height: 40px;
+}
+
+
+
+.control-btn {
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(87, 84, 84);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.prev-btn {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
+.next-btn {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}
+
+.project-desc {
+  height: 250px;
+  width: 500px;
+  background-color: rgba(20, 20, 20, 0.534);
+  top: 25%;
+  left: 25%;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 1200px) {
+  .project-desc {
+    height: auto;
+    padding: 5px;
+    width: 250px;
+  }
+
+  .project-desc a {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
